@@ -9,7 +9,7 @@ function Question({ index, question, answer, onAnswer, onNext, totalQuestions })
         if (answer !== null) {
             const timer = setTimeout(() => {
                 onNext();
-            }, 2000);
+            }, 1500);
             return () => clearTimeout(timer);
         }
     }, [answer, onNext]);
