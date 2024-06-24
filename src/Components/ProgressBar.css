@@ -9,12 +9,12 @@
     flex-direction: column;
     align-items: center;
     width: 23%;
-    /* Adjusted width to fit four bars in one line */
+   
 }
 
 .progress-bar-wrapper {
     width: 100%;
-    /* Adjust the width to fill the container */
+   
     background-color: #ddd;
     /* Light gray background color */
     border-radius: 10px;
@@ -27,7 +27,7 @@
 .progress-bar {
     height: 100%;
     background-color: transparent;
-    /* Initial empty color */
+
     transition: width 0.3s, background-color 0.3s;
 }
 
@@ -37,5 +37,5 @@
     font-size: 14px;
     text-align: center;
     color: #333;
-    /* Darker text color */
+    
 }
