@@ -1,4 +1,4 @@
-/* Ensure the container size is constant */
+
 .question {
     margin-bottom: 20px;
     padding: 40px;
@@ -7,13 +7,13 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 600px;
     height: 300px;
-    /* Adjust the width to your desired constant size */
+ 
 }
 
-/* Add spacing between progress bars and question */
+
 .progress-bars-container {
     margin-bottom: 15px;
-    /* Increased margin for spacing */
+
 }
 
 .progress-bar-category {
@@ -51,7 +51,6 @@
     color: #333;
 }
 
-/* Ensure range slider is fully colored up to the selected option */
 .slider-container {
     margin-top: 20px;
 }
@@ -69,18 +68,11 @@
     transition: opacity 0.2s;
 }
 
-/* Set the background color of the track to light gray */
-/* .slider::-webkit-slider-runnable-track {
-    background: #ddd;
-    width: 100%;
-    /* Ensure track fills slider width */
-/* color: #20adb4;
-} */
 
-*/ .slider::-webkit-slider-runnable-track {
+.slider::-webkit-slider-runnable-track {
     background: linear-gradient(to right, var(--track-color, #ddd) 0%, var(--track-color, #ddd) var(--fill-width, 0%), #ddd var(--fill-width, 0%));
     width: 100%;
-    /* Ensure track fills slider width */
+   
 }
 
 
@@ -92,9 +84,9 @@
     -webkit-appearance: none;
     appearance: none;
     width: 10px;
-    /* Ensure width matches the thumb width */
+
     height: 10px;
-    /* Adjust height as needed */
+   
     border-radius: 50%;
     background: #20adb4;
     cursor: pointer;
@@ -103,19 +95,18 @@
 
 .slider::-moz-range-thumb {
     width: 5px;
-    /* Ensure width matches the thumb width */
+    
     height: 20px;
-    /* Adjust height as needed */
+ 
     border-radius: 50%;
     background: #20adb4;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-/* Adjust button styles */
+
 .button-container {
     margin-top: 20px;
-    /* Adjust top margin as needed */
     display: flex;
     justify-content: space-between;
 }
@@ -135,7 +126,7 @@
     background-color: #6fa9b5;
 }
 
-/* Add spacing between labels and slider */
+
 .labels {
     margin-top: 10px;
     display: flex;
