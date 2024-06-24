@@ -1,0 +1,150 @@
+/* Ensure the container size is constant */
+.question {
+    margin-bottom: 20px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: 300px;
+    /* Adjust the width to your desired constant size */
+}
+
+/* Add spacing between progress bars and question */
+.progress-bars-container {
+    margin-bottom: 15px;
+    /* Increased margin for spacing */
+}
+
+.progress-bar-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23%;
+}
+
+.progress-bar-wrapper {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    height: 10px;
+    /* Reduced height */
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: transparent;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+.progress-bar.filled {
+
+
+    background-color: #20adb4;
+}
+
+.progress-bar-label {
+    font-size: 12px;
+    text-align: center;
+    color: #333;
+}
+
+/* Ensure range slider is fully colored up to the selected option */
+.slider-container {
+    margin-top: 20px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    /* Adjust height as needed */
+    border-radius: 5px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+/* Set the background color of the track to light gray */
+/* .slider::-webkit-slider-runnable-track {
+    background: #ddd;
+    width: 100%;
+    /* Ensure track fills slider width */
+/* color: #20adb4;
+} */
+
+*/ .slider::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, var(--track-color, #ddd) 0%, var(--track-color, #ddd) var(--fill-width, 0%), #ddd var(--fill-width, 0%));
+    width: 100%;
+    /* Ensure track fills slider width */
+}
+
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    /* Ensure width matches the thumb width */
+    height: 10px;
+    /* Adjust height as needed */
+    border-radius: 50%;
+    background: #20adb4;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider::-moz-range-thumb {
+    width: 5px;
+    /* Ensure width matches the thumb width */
+    height: 20px;
+    /* Adjust height as needed */
+    border-radius: 50%;
+    background: #20adb4;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Adjust button styles */
+.button-container {
+    margin-top: 20px;
+    /* Adjust top margin as needed */
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #20adb4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #6fa9b5;
+}
+
+/* Add spacing between labels and slider */
+.labels {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.labels span {
+    flex: 1;
+    text-align: center;
+    font-size: 22px;
+    color: #666;
+}
